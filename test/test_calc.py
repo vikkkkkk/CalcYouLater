@@ -49,7 +49,7 @@ class TestCalculator(unittest.TestCase):
     def test_calculate_infix(self):
         self.assertAlmostEqual(calculate_infix("2 + 3", 0), 5)
         self.assertAlmostEqual(calculate_infix("5 * x", 2), 10)
-        self.assertAlmostEqual(calculate_infix("sin(90)", 0), 1)  # Убедитесь, что синус в радианах
+        self.assertAlmostEqual(calculate_infix("sin(90)", 0), 1) 
 
     def test_calculate_rpn(self):
         self.assertAlmostEqual(calculate_rpn("3 4 +"), 7)
